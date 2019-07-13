@@ -1,0 +1,23 @@
+.main-menu-container {
+    width: 80px;
+    height: auto;
+    margin: 10px auto;
+}
+
+.menu-task {
+    text-align: center;
+    margin-bottom: 10px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    vertical-align: middle;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.task-icon {
+    display: block;
+    font-size: 25px;
+    margin: 5px 0;
+    color: var(--white);
+}

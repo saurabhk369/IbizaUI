@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:400');
+:root {
+    --blue: #00375c;
+    --blueMedium: #005c99;
+    --blueHighlight: #007bce;
+    --red: #c4004b;
+    --green: #007c1b;
+    --white: #f0f0f0;
+    --grey: #848484;
+    --darkGrey: #494949;
+    --lightGrey: #b1b1b1;
+    --black: #292929;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--white);
+    overflow: hidden;
+}
+
+body {
+    position: relative;
+}
+
+ul {
+    color: black;
+    list-style: none;
+}
+
+.app-container-scrollbar {
+    --scrollbar-padding: 0 !important;
+    --scrollbar-container-color: white !important;
+}
+
+.overlay {
+    position: absolute;
+    width: 105vw;
+    height: 105vh;
+    left: 50%;
+    top: 100%;
+    background: var(--white);
+    opacity: 0.3;
+    transform-origin: center center;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}

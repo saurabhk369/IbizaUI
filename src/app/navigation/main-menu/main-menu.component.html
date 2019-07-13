@@ -1,0 +1,37 @@
+<ng-scrollbar>
+    <div class="main-menu-container">
+        <!-- <div class="menu-task" (click)="registerComponent('one')">
+        <fa-icon class="task-icon" icon="search"></fa-icon>
+        <span class="task-name">Search</span>
+    </div>
+    <div class="menu-task" (click)="registerComponent('two')">
+        <fa-icon class="task-icon" icon="th-large"></fa-icon>
+        <span class="task-name">All</span>
+    </div>
+    <div class="menu-task" (click)="registerComponent('three')">
+        <fa-icon class="task-icon" icon="cog"></fa-icon>
+        <span class="task-name">Settings</span>
+    </div> -->
+        <div class="menu-task" (click)="registerComponent('one')">
+            <fa-layers class="task-icon" [fixedWidth]="true">
+                <fa-icon [icon]="['far', 'circle']"></fa-icon>
+                <fa-layers-text content="1" style="color: white" transform="shrink-4"></fa-layers-text>
+            </fa-layers>
+            <span class="task-name">One</span>
+        </div>
+        <div class="menu-task" (click)="registerComponent('two')">
+            <fa-layers class="task-icon" [fixedWidth]="true">
+                <fa-icon [icon]="['far', 'circle']"></fa-icon>
+                <fa-layers-text content="2" style="color: white" transform="shrink-4"></fa-layers-text>
+            </fa-layers>
+            <span class="task-name">Two</span>
+        </div>
+        <div class="menu-task" (click)="registerComponent('three')">
+            <fa-layers class="task-icon" [fixedWidth]="true">
+                <fa-icon [icon]="['far', 'circle']"></fa-icon>
+                <fa-layers-text content="3" style="color: white" transform="shrink-4"></fa-layers-text>
+            </fa-layers>
+            <span class="task-name">Three</span>
+        </div>
+    </div>
+</ng-scrollbar>

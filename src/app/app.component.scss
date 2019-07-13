@@ -1,0 +1,41 @@
+.app-container {
+    // height: calc(100% - var(--headerHeight));
+    display: flex;
+    flex-flow: row;
+    background: var(--black);
+    position: relative;
+}
+
+app-main-menu {
+    background: var(--blueHighlight);
+    width: 100px;
+    flex: 0 0 100px;
+    border: 1px solid var(--blueHighlight);
+}
+
+.bladeContainer {
+    position: absolute;
+    min-height: 100%;
+    height: auto;
+    display: flex;
+    flex-flow: row;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+app-blade {
+    background: var(--white);
+    width: auto;
+    flex: 0 1 auto;
+    border: 1px solid var(--blueHighlight);
+    border-right: none;
+    box-sizing: border-box;
+}
+
+app-modal {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center center;
+}

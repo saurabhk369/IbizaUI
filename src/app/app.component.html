@@ -1,0 +1,13 @@
+<app-header-menu></app-header-menu>
+<div class="app-container" [ngStyle]="{'height': headerHeight}">
+    <app-main-menu></app-main-menu>
+    <ng-scrollbar [trackX]="true" [trackY]="true" class="app-container-scrollbar">
+        <div class="bladeContainer">
+            <app-blade *ngFor="let b of blades" [context]="b">Loading...</app-blade>
+        </div>
+    </ng-scrollbar>
+</div>
+<app-modal *ngIf="message" [modalData]="message"></app-modal>
+<ng-scrollbar>
+    <router-outlet></router-outlet>
+</ng-scrollbar>

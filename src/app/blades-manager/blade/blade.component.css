@@ -1,0 +1,31 @@
+.blade {
+    width: 300px;
+}
+
+.blade-maximize {
+    width: 800px;
+}
+
+.blade-header {
+    background: var(--blueMedium);
+    padding: 5px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blade-header-text {
+    text-transform: capitalize;
+}
+
+.blade-header-icon {
+    margin: 0 5px;
+    cursor: pointer;
+    color: var(--white);
+}

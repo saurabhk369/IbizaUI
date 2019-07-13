@@ -1,0 +1,13 @@
+<div [ngClass]="{'blade': !bladeState, 'blade-maximize': bladeState}">
+    <div class="blade-header">
+        <div class="blade-header-text">{{this.context.componentKey}}</div>
+        <div class="blade-controls">
+            <fa-icon *ngIf="bladeState" icon="window-restore" class="blade-header-icon" (click)="changeBladeState()">
+            </fa-icon>
+            <fa-icon *ngIf="!bladeState" icon="window-maximize" class="blade-header-icon" (click)="changeBladeState()">
+            </fa-icon>
+            <fa-icon icon="window-close" class="blade-header-icon" (click)="close()"></fa-icon>
+        </div>
+    </div>
+    <template #bladeContent></template>
+</div>

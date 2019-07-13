@@ -1,0 +1,19 @@
+<div class="modal-container">
+    <div class="modal-header">
+        <div class="modal-title">{{modalData.data.title}}</div>
+        <div class="modal-icon" (click)="modalData.noFn()">
+            <fa-icon icon="window-close" class="blade-header-icon"></fa-icon>
+        </div>
+    </div>
+    <ng-scrollbar>
+        <div class="modal-content">
+            <span>{{modalData.data.content}}</span>
+        </div>
+    </ng-scrollbar>
+    <div class="modal-footer">
+        <button class="modal-button" *ngIf="modalData.yesFn" (click)="modalData.yesFn()">Yes</button>
+        <button class="modal-button" *ngIf="modalData.noFn" (click)="modalData.noFn()">No</button>
+        <!-- <button class="modal-button">Close</button> -->
+    </div>
+</div>
+<div class="overlay"></div>
