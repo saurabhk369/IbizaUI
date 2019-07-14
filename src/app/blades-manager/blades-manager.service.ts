@@ -52,7 +52,7 @@ export class BladesManagerService {
     } else {
       if (this.isDirtyBladePresent()) {
         let dirtyPresent = false;
-        for (let i = this.getBladeIndex(activeBladeId); i < this.blades.length; i++) {
+        for (let i = this.getBladeIndex(activeBladeId) + 1; i < this.blades.length; i++) {
           if (this.blades[i].isDirty) {
             dirtyPresent = true;
           }
